@@ -1,0 +1,12 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        APP_HOST: ${APP_HOST}
+    container_name: fleur
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: unless-stopped
