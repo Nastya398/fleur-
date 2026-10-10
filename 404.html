@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 — Страница не найдена | Fleur Studio</title>
+    <link rel="icon" href="data:,">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #ffe3ea 0%, #ffd6c2 100%);
+            color: #2a1a20;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 24px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 60px 40px;
+            max-width: 520px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(214, 51, 108, 0.15);
+        }
+
+        .emoji {
+            font-size: 5rem;
+            line-height: 1;
+            margin-bottom: 20px;
+            display: inline-block;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(-5deg); }
+            50%      { transform: translateY(-12px) rotate(5deg); }
+        }
+
+        h1 {
+            font-size: 4.5rem;
+            font-weight: 700;
+            color: #d6336c;
+            line-height: 1;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #2a1a20;
+        }
+
+        p {
+            color: #8a7079;
+            font-size: 1.05rem;
+            margin-bottom: 32px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #d6336c;
+            color: #fff;
+            padding: 14px 34px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            background: #b02a5b;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 24px rgba(214, 51, 108, 0.35);
+        }
+
+        .hint {
+            margin-top: 28px;
+            font-size: 0.9rem;
+            color: #b09aa1;
+        }
+
+        .hint a {
+            color: #d6336c;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .hint a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 44px 26px;
+            }
+            h1 { font-size: 3.5rem; }
+            .emoji { font-size: 4rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="emoji">🌷</div>
+        <h1>404</h1>
+        <h2>Такой страницы нет</h2>
+        <p>
+            Возможно, она потерялась.<br>
+            Но у нас всегда есть свежие букеты на главной.
+        </p>
+        <a href="/" class="btn">Вернуться в магазин</a>
+        <p class="hint">
+            Или позвоните нам: <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleur Studio — Цветочная студия</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__inner">
+            <a href="#" class="logo">🌸 Fleur Studio</a>
+            <nav class="nav">
+                <a href="#catalog">Каталог</a>
+                <a href="#services">Услуги</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <p class="hero__eyebrow">Цветочная студия в центре города</p>
+            <h1 class="hero__title">Букеты для важных событий</h1>
+            <p class="hero__text">
+                Работаем с локальными фермерами, собираем композиции вручную
+                и доставляем по городу в день заказа.
+            </p>
+            <a href="#catalog" class="btn">Смотреть каталог</a>
+        </div>
+    </section>
+
+    <section id="catalog" class="section">
+        <div class="container">
+            <h2 class="section__title">Каталог</h2>
+            <p class="section__subtitle">Сезонные букеты и композиции</p>
+
+            <div class="grid">
+                <article class="card">
+                    <div class="card__emoji">🌹</div>
+                    <h3>Роза в росе</h3>
+                    <p>15 алых роз в крафтовой упаковке</p>
+                    <span class="card__price">3 500 ₽</span>
+                </article>
+
+                <article class="card">
+                    <div class="card__emoji">🌷</div>
+                    <h3>Весенний день</h3>
+                    <p>Тюльпаны и ирисы в пастельных тонах</p>
+                    <span class="card__price">2 800 ₽</span>
+                </article>
+
+                <article class="card">
+                    <div class="card__emoji">🌻</div>
+                    <h3>Солнечный</h3>
+                    <p>Подсолнухи и ромашки</p>
+                    <span class="card__price">2 200 ₽</span>
+                </article>
+
+                <article class="card">
+                    <div class="card__emoji">💐</div>
+                    <h3>Признание</h3>
+                    <p>Пионы и розы в шляпной коробке</p>
+                    <span class="card__price">4 900 ₽</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section section--soft">
+        <div class="container">
+            <h2 class="section__title">Услуги</h2>
+            <div class="services">
+                <div class="service">
+                    <div class="service__icon">🚚</div>
+                    <h3>Доставка по городу</h3>
+                    <p>Курьер привезёт букет в течение двух часов. Возможна доставка точно ко времени.</p>
+                </div>
+                <div class="service">
+                    <div class="service__icon">💍</div>
+                    <h3>Оформление мероприятий</h3>
+                    <p>Свадьбы, корпоративы, дни рождения. Приедем, посмотрим площадку и предложим решение.</p>
+                </div>
+                <div class="service">
+                    <div class="service__icon">📦</div>
+                    <h3>Подписка на цветы</h3>
+                    <p>Свежий букет каждую неделю или раз в месяц. Приятно и для дома, и для офиса.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container contact">
+            <div class="contact__info">
+                <h2 class="section__title section__title--left">Контакты</h2>
+                <p>📍 ул. Цветочная, 7</p>
+                <p>🕒 Ежедневно с 9:00 до 21:00</p>
+                <p>📞 +7 (999) 123-45-67</p>
+                <p>✉️ hello@fleur-studio.ru</p>
+            </div>
+
+            <form id="orderForm" class="form">
+                <h3>Оставить заявку</h3>
+                <input type="text" id="name" placeholder="Имя" required>
+                <input type="tel" id="phone" placeholder="Телефон" required>
+                <textarea id="comment" placeholder="Комментарий" rows="3"></textarea>
+                <button type="submit" class="btn">Отправить</button>
+                <p id="formMessage" class="form__message"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>© <span id="year"></span> Fleur Studio. Все права защищены.</p>
+            <p>ул. Цветочная, 7</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
